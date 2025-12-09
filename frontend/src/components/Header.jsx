@@ -21,7 +21,7 @@ const Header = () => {
         {
           id: 1,
           label: "Maternal and Child Health Center",
-          path: "/meternal-and-child-health-center",
+          path: "/maternal-and-child-health-center",
         },
         {
           id: 2,
@@ -51,7 +51,6 @@ const Header = () => {
       path: "/career",
     },
   ];
-  console.log(links);
   return (
     <header className="py-5 bg-white">
       <div className="container">
@@ -66,7 +65,7 @@ const Header = () => {
                   <NavLink
                     to={link.path}
                     className={({ isActive }) =>
-                      `px-3.5 py-[0.688rem] capitalize leading-6.5 relative ${
+                      `px-3.5 py-[0.688rem] capitalize leading-6.5 font-medium relative transition-all ease-linear duration-300 hover:text-primary-600 ${
                         isActive ? "text-primary-600" : "text-primary-950"
                       } ${
                         link.submenu
@@ -77,16 +76,16 @@ const Header = () => {
                   >
                     {link.label}
                   </NavLink>
-                  {link.submenu && (
+                  {/* {link.submenu && (
                     <ul className="absolute top-0 max-w-83 w-83 border text-border bg-white rounded-lg space-y-1 z-20 divide-y divide-border">
                       {link.submenu &&
                         link.submenu.map((menu) => (
                           <li key={menu.id}>
-                            <Link className="py-3 px-5 text-lg leading-7 text-secondary-800" to={menu.path}>{menu.label}</Link>
+                            <Link className="py-3 px-5 text-lg leading-7 font-medium text-secondary-800" to={menu.path}>{menu.label}</Link>
                           </li>
                         ))}
                     </ul>
-                  )}
+                  )} */}
                 </li>
               ))}
             </ul>

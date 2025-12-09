@@ -9,7 +9,7 @@
   --color-secondary-800: #262626;
   --color-secondary-900: #171717;
   --color-secondary-950: #0a0a0a;
-  --color-border: #F5F5F5;
+  --color-border: #f5f5f5;
   --font-outfit: "Outfit", sans-serif;
 }
 @layer base {
@@ -57,6 +57,9 @@
   }
   section {
     @apply py-31;
+  }
+  .custom-pagination .swiper-pagination-bullet {
+    @apply size-4! border border-[#B579BC] bg-primary-100!;
   }
 }
 
