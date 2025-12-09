@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-primary-100: #f6eff8;
+  --color-primary-600: #9d5da3;
+  --color-primary-950: #371a38;
+  --color-secondary: #0a0a0a;
+  --color-secondary-700: #404040;
+  --color-secondary-800: #262626;
+  --color-secondary-900: #171717;
+  --color-secondary-950: #0a0a0a;
+  --color-border: #F5F5F5;
+  --font-outfit: "Outfit", sans-serif;
+}
+@layer base {
+  h1,
+  .h1 {
+    @apply font-outfit font-semibold text-[3.5rem] leading-17 text-secondary-900;
+  }
+  h2,
+  .h2 {
+    @apply font-outfit font-semibold text-[2.5rem] leading-12 text-black;
+  }
+  h3,
+  .h3 {
+    @apply font-outfit font-semibold text-[2.125rem] leading-10 text-secondary-900;
+  }
+  h4,
+  .h4 {
+    @apply font-outfit font-semibold text-[1.75rem] leading-10 text-secondary;
+  }
+  h5,
+  .h5 {
+    @apply font-outfit font-medium text-2xl leading-7.5 text-secondary;
+  }
+  h6,
+  .h6 {
+    @apply font-outfit font-medium text-[1.25rem] leading-6 text-secondary-900;
+  }
+  body,
+  p,
+  a {
+    @apply font-outfit font-normal text-base leading-6 text-secondary-700;
+  }
+  a {
+    @apply text-primary-600;
+  }
+  label {
+    @apply font-outfit font-normal text-base leading-6 text-secondary-900;
+  }
+  input,
+  textarea {
+    @apply p-4 font-outfit font-normal text-sm leading-5 text-[#A3A3A3] rounded border border-[#737373] h-13;
+  }
+  textarea {
+    @apply h-39.5;
+  }
+  section {
+    @apply py-31;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply lg:max-w-318 px-3 mx-auto;
+  }
+}
+
+@layer components {
+  .sabmenu::before {
+    /* position: relative; */
+    display: inline-block;
+    content: "";
+    background-image: url(./assets/images/downarrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
