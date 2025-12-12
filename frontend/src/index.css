@@ -56,7 +56,7 @@
     @apply h-39.5;
   }
   section {
-    @apply py-31;
+    @apply py-10 md:py-15 lg:py-31;
   }
   .custom-pagination .swiper-pagination-bullet {
     @apply size-4! border border-[#B579BC] bg-primary-100!;

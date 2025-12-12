@@ -9,7 +9,6 @@ import rightArrow from "../assets/images/rightarrow.png";
 
 const Hero = () => {
   const homeHero = useSelector((state) => state.homeHero);
-  console.log(homeHero);
   return (
     <section className="py-0">
       <Swiper

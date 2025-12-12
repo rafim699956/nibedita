@@ -55,7 +55,7 @@ const Header = () => {
     <header className="py-5 bg-white">
       <div className="container">
         <div className="flex items-center justify-between gap-4">
-          <Link>
+          <Link to="/">
             <img className="w-[9.282rem]" src={logo} alt="site logo" />
           </Link>
           <nav className="flex items-center justify-end grow">
