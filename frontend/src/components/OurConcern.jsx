@@ -4,7 +4,6 @@ import { Link } from "react-router";
 
 const OurConcern = () => {
   const ourConcernData = useSelector((state) => state.ourConcern);
-  console.log(ourConcernData);
   return (
     <section className="bg-primary-950">
       <div className="container space-y-6 md:space-y-8 lg:space-y-14">
@@ -19,7 +18,7 @@ const OurConcern = () => {
             ourConcernData.blogPosts.map((item) => (
               <div
                 key={item.id}
-                className="p-6 lg:p-10 bg-white rounded-2xl flex flex-col md:flex-row items-center gap-6 lg:gap-10 md:even:flex-row-reverse"
+                className="p-5 lg:p-10 bg-white rounded-2xl flex flex-col md:flex-row items-center gap-6 lg:gap-10 md:even:flex-row-reverse"
               >
                 <div className="w-full md:max-w-[38.61%] shrink-0">
                   <img
