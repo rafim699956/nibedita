@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
 
@@ -32,7 +33,7 @@ const OurConcern = () => {
                     <h4>{item.title}</h4>
                     <p>{item.des}</p>
                   </div>
-                  <Link to="/">Know More</Link>
+                  <Link className="flex items-center gap-1.5" to="/">Know More <FaArrowRightLong className="text-2xl" /></Link>
                 </div>
               </div>
             ))}

@@ -32,7 +32,6 @@ const LatestNews = () => {
                     />
                   </div>
                 )}
-
                 <div
                   className={`grow ${
                     item.img
