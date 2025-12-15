@@ -26,9 +26,9 @@ const Hero = () => {
       >
         {homeHero &&
           homeHero.map((item) => (
-            <SwiperSlide key={item.id}>
+            <SwiperSlide className="" key={item.id}>
               <div
-                className="lg:min-h-215 flex lg:items-center relative py-12 lg:py-24 min-h-full"
+                className="lg:min-h-215 h-full flex lg:items-center relative py-12 lg:py-24"
                 style={{ backgroundColor: item.bgColor }}
               >
                 <div className="container flex flex-col-reverse gap-4 lg:flex-row lg:items-center">

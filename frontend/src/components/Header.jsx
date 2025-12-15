@@ -1,5 +1,8 @@
 import { Link, NavLink } from "react-router";
 import logo from "../assets/images/sitelogo.png";
+import { MdMenu } from "react-icons/md";
+import { useState } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
   const links = [
@@ -51,15 +54,29 @@ const Header = () => {
       path: "/career",
     },
   ];
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="py-5 bg-white">
       <div className="container">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-4">
           <Link to="/">
             <img className="w-[9.282rem]" src={logo} alt="site logo" />
           </Link>
-          <nav className="flex items-center justify-end grow">
-            <ul className="flex items-center">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="p-2 rounded border border-primary-100 cursor-pointer lg:hidden"
+          >
+            <MdMenu className="text-2xl" />
+          </button>
+          <nav
+            className={`${
+              isMenuOpen
+                ? "flex flex-col lg:flex-row gap-4 min-h-25"
+                : "hidden lg:flex h-0 lg:h-auto overflow-hidden"
+            }  lg:items-center lg:justify-end grow basis-full lg:basis-auto transition-all duration-300 ease-linear`}
+          >
+            <ul className="flex flex-col lg:flex-row lg:items-center w-full lg:w-auto">
               {links.map((link) => (
                 <li key={link.id} className="flex items-center relative">
                   <NavLink
@@ -89,6 +106,15 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            <div className="w-full h-0.5 lg:w-0.5 lg:h-8 bg-border lg:ml-4.5 lg:mr-8"></div>
+            <div>
+              <Link
+                className="py-3 px-6 bg-primary-600 rounded-full inline-flex items-center gap-2 text-white font-medium text-base"
+                to="/contact-us"
+              >
+                Contact Us <FaArrowRightLong className="text-2xl" />
+              </Link>
+            </div>
           </nav>
         </div>
       </div>
