@@ -80,4 +80,7 @@
     width: 20px;
     height: 20px;
   }
+  .swiper-wrapper {
+    align-items: stretch !important;
+  }
 }
