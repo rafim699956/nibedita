@@ -15,38 +15,38 @@
 @layer base {
   h1,
   .h1 {
-    @apply font-outfit font-semibold text-[3.5rem] leading-17 text-secondary-900;
+    @apply font-outfit font-semibold text-[1.75rem] leading-9 md:text-[2.5rem] md:leading-12 lg:text-[3.5rem] lg:leading-17 text-secondary-900;
   }
   h2,
   .h2 {
-    @apply font-outfit font-semibold text-[2.5rem] leading-12 text-black;
+    @apply font-outfit font-semibold text-[1.5rem] leading-8 md:text-[2rem] md:leading-10 lg:text-[2.5rem] lg:leading-12 text-black;
   }
   h3,
   .h3 {
-    @apply font-outfit font-semibold text-[2.125rem] leading-10 text-secondary-900;
+    @apply font-outfit font-semibold text-[1.5rem] leading-8 md:text-[1.875rem] md:leading-9 lg:text-[2.125rem] lg:leading-10 text-secondary-900;
   }
   h4,
   .h4 {
-    @apply font-outfit font-semibold text-[1.75rem] leading-10 text-secondary;
+    @apply font-outfit font-semibold text-[1.25rem] leading-7 md:text-[1.5rem] md:leading-8 lg:text-[1.75rem] lg:leading-10 text-secondary;
   }
   h5,
   .h5 {
-    @apply font-outfit font-medium text-2xl leading-7.5 text-secondary;
+    @apply font-outfit font-medium text-lg leading-6 md:text-xl md:leading-7 lg:text-2xl lg:leading-7.5 text-secondary;
   }
   h6,
   .h6 {
-    @apply font-outfit font-medium text-[1.25rem] leading-6 text-secondary-900;
+    @apply font-outfit font-medium text-base leading-5 md:text-lg md:leading-6 lg:text-[1.25rem] lg:leading-6 text-secondary-900;
   }
   body,
   p,
   a {
-    @apply font-outfit font-normal text-base leading-6 text-secondary-700;
+    @apply font-outfit font-normal text-sm leading-5 md:text-base md:leading-6 lg:text-base lg:leading-6 text-secondary-700;
   }
   a {
     @apply text-primary-600;
   }
   label {
-    @apply font-outfit font-normal text-base leading-6 text-secondary-900;
+    @apply font-outfit font-normal text-sm leading-5 md:text-base md:leading-6 lg:text-base lg:leading-6 text-secondary-900;
   }
   input,
   textarea {

@@ -46,7 +46,7 @@ const Header = () => {
     {
       id: 4,
       label: "news & events",
-      path: "/news",
+      path: "/news-events",
     },
     {
       id: 5,

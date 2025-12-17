@@ -8,6 +8,7 @@ import store from "./app/store.js";
 import About from "./pages/About.jsx";
 import Career from "./pages/Career.jsx";
 import  PageNotFound from "./pages/pageNotFound.jsx";
+import NewsEvents from "./pages/NewsEvents.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/news-events" element={<NewsEvents />} />
           <Route path="/career" element={<Career />} />
           <Route path="/*" element={<PageNotFound />} />
           {/* <Route path="/news&events" element={<About />} /> */}

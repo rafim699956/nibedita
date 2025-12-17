@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Pagination from "../components/Pagination";
+import AboutNibedita from "../components/AboutNibedita";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <AboutNibedita />
+    </>
+  );
+};
 
-export default About
+export default About;

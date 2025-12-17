@@ -1,12 +1,21 @@
-import React from "react";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import footerLogo from "../assets/images/footerlogo.png";
+import footerShape from "../assets/images/footershape.png";
 import { FaFacebookF, FaYoutube } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
+  const { pathname } = useLocation();
   return (
-    <footer className='bg-primary-600 relative z-10 before:content-[""] before:absolute before:inset-0 before:bg-secondary-800 before:-z-10 before:rounded-tl-4xl lg:before:rounded-tl-[5rem] before:rounded-tr-4xl lg:before:rounded-tr-[5rem]'>
+    <footer
+      className={`${
+        pathname == "/" ? "bg-primary-600" : "bg-transparent"
+      } relative z-10 before:content-[""] before:absolute before:inset-0 before:bg-secondary-800 before:-z-10 before:rounded-tl-4xl lg:before:rounded-tl-[5rem] before:rounded-tr-4xl lg:before:rounded-tr-[5rem]`}
+    >
+      <div
+        className="absolute bottom-0 left-0 right-0 top-[27.88%] w-full bg-no-repeat bg-center bg-cover -z-10"
+        style={{ backgroundImage: `url(${footerShape})` }}
+      ></div>
       <div className="container pt-10 md:pt-16 lg:pt-24 pb-8 md:pb-12 lg:pb-17.5 flex flex-col lg:flex-row gap-8 justify-between">
         <div className="space-y-4 md:space-y-6 lg:space-y-7.5 lg:max-w-[28.813rem]">
           <div>
@@ -121,6 +130,17 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="border-t border-t-secondary-700 py-9">
+        <div className="container">
+          <p className="text-center text-white text-base">
+            copyright © 2025{" "}
+            <Link className="text-white" to="/">
+              Nebedita
+            </Link>{" "}
+            all rights reserved
+          </p>
         </div>
       </div>
     </footer>
