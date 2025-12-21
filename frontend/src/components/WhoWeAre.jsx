@@ -4,8 +4,6 @@ import { useSelector } from "react-redux";
 const WhoWeAre = () => {
   const whoWeAre = useSelector((state) => state.whoWeAre);
   const [activeTab, setActiveTab] = useState("Mission & Vision");
-  console.log(activeTab);
-  console.log(whoWeAre);
   return (
     <section className="bg-white">
       <div className="container space-y-6 md:space-y-8 lg:space-y-14">

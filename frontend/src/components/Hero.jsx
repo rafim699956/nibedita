@@ -16,19 +16,19 @@ const Hero = () => {
           clickable: true,
           el: ".custom-pagination",
         }}
-        // autoplay={{
-        //   autoplay: true,
-        //   delay: 3000,
-        // }}
+        autoplay={{
+          autoplay: true,
+          delay: 3000,
+        }}
         modules={[Pagination, Autoplay]}
         slidesPerView={1}
         loop={true}
       >
         {homeHero &&
           homeHero.map((item) => (
-            <SwiperSlide className="h-auto! flex!" key={item.id}>
+            <SwiperSlide className="h-auto! lg:h-full flex! lg:block" key={item.id}>
               <div
-                className="lg:min-h-215 h-full flex items-start lg:items-center relative py-12 lg:py-24"
+                className="lg:min-h-215 h-full flex items-start lg:items-center relative py-12 lg:py-24 w-full"
                 style={{ backgroundColor: item.bgColor }}
               >
                 <div className="container flex flex-col-reverse gap-4 lg:flex-row lg:items-center">

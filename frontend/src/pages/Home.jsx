@@ -4,6 +4,8 @@ import WhoWeAre from "../components/WhoWeAre";
 import OurConcern from "../components/OurConcern";
 import OurTeamMember from "../components/OurTeamMember";
 import LatestNews from "../components/LatestNews";
+import OurCareJourney from "../components/OurCareJourney";
+import ContactUsSection from "../components/ContactUsSection";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <OurConcern />
       <OurTeamMember />
       <LatestNews />
+      <OurCareJourney />
+      <ContactUsSection />
     </>
   );
 };
