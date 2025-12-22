@@ -6,6 +6,7 @@ import OurTeamMember from "../components/OurTeamMember";
 import LatestNews from "../components/LatestNews";
 import OurCareJourney from "../components/OurCareJourney";
 import ContactUsSection from "../components/ContactUsSection";
+import HistoryOfNibedita from "../components/HistoryOfNibedita";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       <WhoWeAre />
       <OurConcern />
+      <HistoryOfNibedita />
       <OurTeamMember />
       <LatestNews />
       <OurCareJourney />

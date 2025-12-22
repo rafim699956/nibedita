@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { CiLocationOn, CiMail, CiShare2 } from "react-icons/ci";
 import { FaPhoneAlt, FaYoutube } from "react-icons/fa";
 import {
@@ -43,61 +43,62 @@ const ContactUsSection = () => {
         </div>
         <div className="flex flex-wrap gap-6">
           <div className="flex flex-col lg:flex-row gap-6 w-full lg:justify-between">
-            <div className="bg-white p-6 pb-8 md:p-8 md:pb-9 lg:p-10 lg:pb-12 border border-[#E0C3E4] rounded-xl inline-flex flex-col gap-6 w-full lg:max-w-163.5 lg:flex-1">
-              <form onSubmit={(e) => handleSubmit(e)}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                  <div className="flex flex-col gap-1.5">
-                    <label htmlFor="fName">Full Name</label>
-                    <input
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      type="text"
-                      placeholder="Type your full name"
-                      id="fName"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1.5">
-                    <label htmlFor="email">Email Address</label>
-                    <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="email"
-                      placeholder="Type your email address"
-                      id="email"
-                    />
-                  </div>
-                </div>
+            <form
+              className="bg-white p-6 pb-8 md:p-8 md:pb-9 lg:p-10 lg:pb-12 border border-[#E0C3E4] rounded-xl inline-flex flex-col gap-6 w-full lg:max-w-163.5 lg:flex-1"
+              onSubmit={(e) => handleSubmit(e)}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
                 <div className="flex flex-col gap-1.5">
-                  <label htmlFor="subject">Subject</label>
+                  <label htmlFor="fName">Full Name</label>
                   <input
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     type="text"
-                    placeholder="Type your subject"
-                    id="subject"
+                    placeholder="Type your full name"
+                    id="fName"
                   />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <label htmlFor="message">Your Message</label>
-                  <textarea
-                    className="min-h-39.5 resize-none"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    name=""
-                    id="message"
-                    placeholder="Type your message"
-                  ></textarea>
+                  <label htmlFor="email">Email Address</label>
+                  <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="email"
+                    placeholder="Type your email address"
+                    id="email"
+                  />
                 </div>
-                <div className="mt-4">
-                  <button
-                    className="py-6 px-8 rounded-full bg-primary-600 text-white cursor-pointer flex items-center gap-2 text-lg leading-none font-semibold"
-                    type="submit"
-                  >
-                    Send Message <FaArrowRightLong className="text-2xl" />
-                  </button>
-                </div>
-              </form>
-            </div>
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label htmlFor="subject">Subject</label>
+                <input
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  type="text"
+                  placeholder="Type your subject"
+                  id="subject"
+                />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label htmlFor="message">Your Message</label>
+                <textarea
+                  className="min-h-39.5 resize-none"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  name=""
+                  id="message"
+                  placeholder="Type your message"
+                ></textarea>
+              </div>
+              <div className="mt-4">
+                <button
+                  className="py-6 px-8 rounded-full bg-primary-600 text-white cursor-pointer flex items-center gap-2 text-lg leading-none font-semibold"
+                  type="submit"
+                >
+                  Send Message <FaArrowRightLong className="text-2xl" />
+                </button>
+              </div>
+            </form>
             <div className="bg-white py-8 px-4 lg:py-10 lg:px-6 rounded-xl border border-[#E0C3E4] w-full lg:flex-1 lg:max-w-113.5 divide-y divider-[#E5E5E5] space-y-5">
               <div className="px-4 pb-5 space-y-4">
                 <CiLocationOn className="text-2xl text-primary-600" />

@@ -46,7 +46,7 @@
     @apply text-primary-600;
   }
   label {
-    @apply font-outfit font-normal text-sm leading-5 md:text-base md:leading-6 lg:text-base lg:leading-6 text-secondary-900;
+    @apply font-outfit font-normal text-sm leading-5 md:text-base md:leading-6 lg:text-base lg:leading-6.5 text-secondary-900;
   }
   input,
   textarea {

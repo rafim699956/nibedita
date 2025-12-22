@@ -4,8 +4,9 @@ import whoWeAreSlice from "../features/whoWeAre/whoWeAreSlice";
 import ourConcernSlice from "../features/ourConcern/ourConcernSlice";
 import ourTeamMemberSlice from "../features/ourTeamMember/ourTeamMemberSlice";
 import latestNewsSlice from "../features/latestNews/latestNewsSlice";
-import ourCareJourneySlice from "../features/ourCareJourney/ourCareJourneySlice"
-import contactUsSlice from "../features/contactusSection/contactusSlice"
+import ourCareJourneySlice from "../features/ourCareJourney/ourCareJourneySlice";
+import contactUsSlice from "../features/contactusSection/contactusSlice";
+import historyOfNibeditaSlice from "../features/historyofNibedita/historyOfnibeditaSlice";
 export default configureStore({
     reducer: {
         homeHero: homeHeroSlice,
@@ -15,5 +16,6 @@ export default configureStore({
         latestNews: latestNewsSlice,
         ourJourney: ourCareJourneySlice,
         contactus: contactUsSlice,
-    }
-})
+        historyOfNibedita: historyOfNibeditaSlice,
+    },
+});
