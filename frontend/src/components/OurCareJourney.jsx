@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const OurCareJourney = () => {
   const data = useSelector((state) => state.ourJourney);
-  console.log(data);
   return (
     <section className="space-y-6 md:space-y-10 lg:space-y-14">
       <div className="container">
