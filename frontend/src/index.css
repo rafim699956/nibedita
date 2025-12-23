@@ -61,6 +61,12 @@
   .custom-pagination .swiper-pagination-bullet {
     @apply size-4! border border-[#B579BC] bg-primary-100!;
   }
+  .mySwiper2 .swiper-slide:first-child{
+    @apply -ml-50;
+  }
+  .mySwiper3 .swiper-slide:first-child{
+    @apply -ml-35;
+  }
 }
 
 @layer utilities {

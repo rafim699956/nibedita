@@ -5,7 +5,6 @@ const Timeline = () => {
   const { timeLine } = timelineData;
   const firstIndex = timeLine[0];
   const lastIndex = timeLine[timeLine.length - 1];
-  console.log(firstIndex, lastIndex);
   return (
     <div className="relative lg:max-w-285 w-full mx-auto">
       <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-px h-full bg-[linear-gradient(180deg,#F8F8F8_-3.16%,#9D5DA3_54.35%,#F8F8F8_104.33%)]"></div>
@@ -17,9 +16,9 @@ const Timeline = () => {
               key={item.id}
               className={`flex flex-wrap ${
                 firstIndex.id === item.id ? "pt-8 md:pt-10 lg:pt-16.5" : ""
-              } ${lastIndex.id === item.id ? "pb-8 md:pb-10 lg:pb-[4.813rem]" : ""} ${
-                even ? "flex-row-reverse" : "flex-row"
-              }`}
+              } ${
+                lastIndex.id === item.id ? "pb-8 md:pb-10 lg:pb-[4.813rem]" : ""
+              } ${even ? "flex-row-reverse" : "flex-row"}`}
             >
               <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-6">
                 <div

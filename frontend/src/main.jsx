@@ -1,5 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
+import "swiper/css";
+import "swiper/css/pagination";
 import "./index.css";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
